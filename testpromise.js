@@ -1,17 +1,17 @@
-// var Promise = require('promise');
-// var request = require('request');
-// var a=2;
-// 	var promise2 = new Promise(function(resolve,reject){
-// 		resolve("asdf");
-// 	});
-// var promise = new Promise(function(resolve,reject){
-// resolve(promise2)
+var Promise = require('promise');
+var request = require('request');
+var a=2;
+	var promise2 = new Promise(function(resolve,reject){
+		resolve("asdf");
+	});
+var promise = new Promise(function(resolve,reject){
+resolve(promise2)
 
-// });
+});
 
-// promise.then(function(res){
-// 	console.log(res);
-// })
+promise.then(function(res){
+	console.log(res);
+})
 // //result is asdf เพราะเราสามารถ .then ต่อได้เลย และค่า res มือค่าเท่ากับค่าที่ resolve มาแล้วจึงสามารถ return ต่อไปได้ทันที
 
 //=========================================================//
