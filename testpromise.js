@@ -16,23 +16,23 @@
 
 //=========================================================//
 
-// var Promise = require('promise');
-// var request = require('request');
-// var a=2;
-// 	var promise2 = new Promise(function(resolve,reject){
-// 		resolve("asdf");
-// 	});
-// var promise = new Promise(function(resolve,reject){
-// resolve(promise2)
+var Promise = require('promise');
+var request = require('request');
+var a=2;
+	var promise2 = new Promise(function(resolve,reject){
+		resolve("asdf");
+	});
+var promise = new Promise(function(resolve,reject){
+resolve(promise2)
 
-// });
+});
 
-// promise.then(function(res){
-// 	console.log("sdfsdf");
+promise.then(function(res){
+	console.log("sdfsdf");
 
-// }).then(function(){console.log("aadf")});
+}).then(function(){console.log("aadf")});
 
-//result is sdfsdf aadf
+result is sdfsdf aadf
 
 //=====================================================//
 
