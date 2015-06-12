@@ -74,35 +74,35 @@
 
 //==========================================================================//
 
-var Promise = require('promise');
-var request = require('request');
-var a=2;
-var promise = new Promise(function(resolve,reject){
-	setTimeout(function(){
-		a=10;
-		resolve("start")
-	},200);
+// var Promise = require('promise');
+// var request = require('request');
+// var a=2;
+// var promise = new Promise(function(resolve,reject){
+// 	setTimeout(function(){
+// 		a=10;
+// 		resolve("start")
+// 	},200);
 	
 	
-});
+// });
 
-promise.then(function(res){
-	console.log(a);
-	console.log(res);
-	//return Promise.resolve("a")	
-}).then(function(res){	
-	a++;
-	console.log("1 |"+a/*+res*/);
-	return Promise.resolve(a)
-}).then(function(res){
-	var b=res;
-	console.log("2 |"+res);
-	return Promise.resolve(b)
+// promise.then(function(res){
+// 	console.log(a);
+// 	console.log(res);
+// 	//return Promise.resolve("a")	
+// }).then(function(res){	
+// 	a++;
+// 	console.log("1 |"+a/*+res*/);
+// 	return Promise.resolve(a)
+// }).then(function(res){
+// 	var b=res;
+// 	console.log("2 |"+res);
+// 	return Promise.resolve(b)
 
-}).then(function(res){
-	console.log("3 |"+res);
-	console.log("4 |"+a);
-});
+// }).then(function(res){
+// 	console.log("3 |"+res);
+// 	console.log("4 |"+a);
+// });
 
 
 
